@@ -2,13 +2,31 @@
 <html>
 
   <head>
-    <title>Enbed Unblock</title>
+    <title>Embed Unblock</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="js/main.js" rel="script" type="text/js">
   </head>
   <body>
-    <embed src="http://www.creatur.io" class="game">
+    <div class="tab">
+     <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+     <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+     <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+
+    <div id="creatur.io" class="tabcontent">
+      <embed src="http://www.creatur.io" class="game">
+    </div>
+
+    <div id="paper.io" class="tabcontent">
+      <embed src="http://www.paper-io.com" class="game">
+    </div>
+
+    <div id="buildroyale.io" class="tabcontent">
+      <embed src="http://www.buildroyale.io" class="game">
+    </div>
+    <!–– <embed src="http://www.creatur.io" class="game">
     <embed src="http://www.paper-io.com" class="game">
-    <embed src="http://www.buildroyale.io" class="game">
+    <embed src="http://www.buildroyale.io" class="game"> -->
     
     </body>
   
