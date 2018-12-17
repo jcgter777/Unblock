@@ -8,6 +8,6 @@ embed {
 }
 
 .game {
- width: 1300em;
- height: 650px;
+ width: 100vmax;
+ height: 100vmin;
 }
