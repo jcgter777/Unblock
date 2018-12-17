@@ -1,6 +1,5 @@
 body {
- border: 10px;
- border-radius: 10px;
+ font-family: 'Ubuntu', sans-serif;
 }
 
 embed {
@@ -8,8 +7,8 @@ embed {
 }
 
 .game {
- width: 100vmax;
- height: 100vmin;
+ width: 80vmax;
+ height: 80vmin;
 }
 
 .tab {
