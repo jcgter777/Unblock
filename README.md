@@ -1,2 +1,2 @@
 # Unblock
-Play blocked games
+Use blocked sites
