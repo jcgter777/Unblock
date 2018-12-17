@@ -1,9 +1,14 @@
 body {
- font-family: 'Ubuntu', sans-serif;
+ border: 10px;
+ border-radius: 10px;
 }
 
 embed {
  border-radius: 10px;
+}
+
+#title {
+    font-size: x-large;
 }
 
 .game {
