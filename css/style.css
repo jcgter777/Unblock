@@ -3,8 +3,11 @@ body {
  border-radius: 10px;
 }
 
+embed {
+ border-radius: 10px;
+}
 
 .game {
- width: 1300px;
+ width: 1300em;
  height: 650px;
 }
