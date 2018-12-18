@@ -5,11 +5,17 @@ body {
 
 #title {
     font-size: x-large;
+    font-weight: 200;
+}
+
+#ytlink {
+  float: right;
+  font-size: medium;
 }
 
 .site {
- width: 80vmax;
- height: 80vmin;
+ width: 90vmax;
+ height: 90vmin;
 }
 
 .tab {
