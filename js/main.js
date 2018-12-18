@@ -1,4 +1,4 @@
-var myVar;
+/* var myVar;
 
 function myFunction() {
   myVar = setTimeout(showPage, 3000);
@@ -7,9 +7,9 @@ function myFunction() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
-}
+} */
 
-function openGame(evt, gameName) {
+function openGame(evt, siteName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -26,6 +26,6 @@ function openGame(evt, gameName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(gameName).style.display = "block";
+  document.getElementById(siteName).style.display = "block";
   evt.currentTarget.className += " active";
 }
