@@ -20,6 +20,14 @@ body {
   height: 95%;
 } */
 
+.hidden {
+ display: none;
+}
+
+.visible {
+ display: block;
+}
+
 .site {
  width: 95vmax;
  height: 90vmin;
