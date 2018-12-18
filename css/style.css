@@ -7,9 +7,9 @@ body {
     font-size: x-large;
 }
 
-.game {
- width: 100vmax;
- height: 100vmin;
+.site {
+ width: 80vmax;
+ height: 80vmin;
 }
 
 .tab {
