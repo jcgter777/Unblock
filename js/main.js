@@ -9,7 +9,7 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 } */
 
-function openGame(evt, siteName) {
+function openSite(evt, siteName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
