@@ -13,6 +13,10 @@ body {
   font-size: medium;
 }
 
+#classroom {
+  height: 100%;
+}
+
 .site {
  width: 90vmax;
  height: 90vmin;
