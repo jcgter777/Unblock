@@ -23,6 +23,16 @@ embed {
  
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: aliceblue;
+  color: black;
+  text-align: center;
+}
+
 /* Style the buttons that are used to open the tab content */
 .tab button {
  background-color: inherit;
