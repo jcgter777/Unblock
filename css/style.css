@@ -19,15 +19,14 @@ body {
 }
 
 .site {
- width: 85vmax;
- height: 55vmin;
+ width: 90vmax;
+ height: 80vmin;
 }
 
 .tab {
  overflow: hidden;
  border: 1px solid #ccc;
  background-color: #f1f1f1;
- height: 40px;
  
 }
 
