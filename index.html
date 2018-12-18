@@ -12,22 +12,28 @@
   <body>
     <h1 id="title">Use blocked sites here!</h1>
     <div class="tab">
-     <button class="tablinks" onclick="openGame(event, 'creatur')">creatur.io</button>
-     <button class="tablinks" onclick="openGame(event, 'paper-io')">paper-io.com</button>
-     <button class="tablinks" onclick="openGame(event, 'build')">buildroyale.io</button>
+     <button class="tablinks" onclick="openSite(event, 'creatur')">creatur.io</button>
+     <button class="tablinks" onclick="openSite(event, 'paper')">paper-io.com</button>
+     <button class="tablinks" onclick="openSite(event, 'build')">buildroyale.io</button>
+     <button class="tablinks" onclick="openSite(event, 'yt')">youtube.com</button>
     </div>
 
     <div id="creatur" class="tabcontent" onload="loader()">
-      <embed src="http://www.creatur.io" class="game">
+      <embed src="http://www.creatur.io" class="site">
     </div>
 
     <div id="paper" class="tabcontent" onload="loader()">
-      <embed src="http://paper-io.com/ class="game">
+      <embed src="http://paper-io.com/ class="site">
     </div>
 
     <div id="build" class="tabcontent">
-      <embed src="http://www.buildroyale.io" class="game" onload="loader()">
+      <embed src="http://www.buildroyale.io" class="site" onload="loader()">
     </div>
+    
+    <div id="yt" class="tabcontent">
+      <embed src="http://youtube.com" class="site" onload="loader()">
+    </div>
+                                                                           
     <p id="instruct">If nothing shows up when you click a tab, go to the address bar, click a shield-like icon at the right, and click load unsafe scripts. (Chrome)</p>
                     
     <footer class="footer">&copy; 2018 jcgter777</footer>
