@@ -8,6 +8,17 @@ body {
   font-size: medium;
 }
 
+#refresh {
+ float: right;
+ font-size: small;
+ border-radius: 10px;
+ background-color: aliceblue;
+}
+
+#refresh:hover {
+ background-color: skyblue;
+}
+
 #secret {
   border: 1px white;
   border-radius: 50px;
