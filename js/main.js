@@ -1,6 +1,7 @@
 function unlock() {
     document.getElementById('main-div').classList = 'visible';
-  }
+    document.getElementById('decoy-div').classList = 'hidden';
+}
 
 function openSite(evt, siteName) {
   // Declare all variables
