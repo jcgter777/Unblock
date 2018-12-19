@@ -11,6 +11,8 @@ body {
 #secret {
   border: 1px white;
   border-radius: 50px;
+  height: 5px;
+  width: 5px;
 
 }
 
