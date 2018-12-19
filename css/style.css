@@ -33,9 +33,51 @@ body {
   cursor: crosshair;
 }
 
-/* #classroom {
-  height: 95%;
-} */
+#logout {
+  margin: auto auto;
+  width: 100px;
+  height: 30px;
+  background-color: #DCDCDC;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #fafafa;
+  color: #039be5;
+  margin-left: 28px;
+}
+
+#logout:active {
+  background-color: #A9A9A9;
+}
+
+#loading {
+  text-align: center;
+}
+
+#logoutline a {
+  position: relative;
+  width: 270px;
+  height: 30px;
+  background-color: #DCDCDC;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 100%;
+  margin: 10px;
+  margin-right: 31px;
+  margin-left: 0px;
+  border: 1px solid black;
+  background-color: #fafafa;
+  padding: 5px 20px;
+}
+
+#logoutline a:active {
+  background-color: #A9A9A9;  
+}
+
+div {
+  text-align: center;
+}
 
 .title {
   font-size: large;
