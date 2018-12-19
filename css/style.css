@@ -19,6 +19,14 @@ body {
  background-color: skyblue;
 }
 
+#let {
+  border: none;
+  background-color: white;
+  color: black;
+  padding: none;
+  margin: 0;
+} 
+
 #secret {
   border: 1px white;
   border-radius: 50px;
@@ -32,10 +40,6 @@ body {
   border: 1px #A9A9A9;*/
   cursor: crosshair;
 }
-
-/* #classroom {
-  height: 95%;
-} */
 
 .title {
   font-size: large;
