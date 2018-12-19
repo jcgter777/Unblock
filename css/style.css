@@ -1,10 +1,6 @@
 body {
  border: 10px;
  border-radius: 10px;
- width: 100%;
- margin: auto auto;
- padding: 10px;
- background-color: #fff;
 }
 
 #ytlink {
@@ -37,6 +33,10 @@ body {
   cursor: crosshair;
 }
 
+/* #classroom {
+  height: 95%;
+} */
+
 .title {
   font-size: large;
   font-weight: 200;
@@ -47,13 +47,11 @@ body {
 }
 
 .hidden {
-  display: none;
-  visibility: hidden;
+ display: none;
 }
 
 .visible {
-  display: block;
-  visibility: visible;
+ display: block;
 }
 
 .site {
