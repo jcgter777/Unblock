@@ -24,28 +24,10 @@ function openSite(evt, siteName) {
   evt.currentTarget.className += " active";
 }
 
-
-/* function passWord() {
-  
-  var testV = 1;
-  var pass1 = prompt('Please Enter Your Password',' ');
-  var body;
-  area = document.getElementByClassName("area");
-  area.style.display = "none"
-  while (testV < 3) {
-    if (!pass1) 
-       history.go(-1); 
-    if (pass1.toLowerCase() == "unblockme") {
-      alert('You Got it Right!');
-      window.open('/Unblock/');
-      break;
-    } 
-    testV+=1;
-    var pass1 = 
-        prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-  }
-  if (pass1.toLowerCase()!="password" & testV ==3) 
-    alert('Access Denied - Please try again in 24 hours');
-    history.go(-1);
-    return " ";
-} */
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
