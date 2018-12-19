@@ -3,14 +3,6 @@ body {
  border-radius: 10px;
 }
 
-#title {
-  font-size: x-large;
-  font-weight: 200;
-  height: 40px;
-  margin: 0px;
-  margin-top: 10px;
-}
-
 #ytlink {
   float: right;
   font-size: medium;
@@ -18,16 +10,26 @@ body {
 
 #secret {
   border: 1px white;
+  border-radius: 50px;
 
 }
 
 #secret:hover {
   background-color: #ccc;
+  border: 1px #696969;
 }
 
 /* #classroom {
   height: 95%;
 } */
+
+.title {
+  font-size: large;
+  font-weight: 200;
+  height: 40px;
+  margin: 0px;
+  margin-top: 10px;
+}
 
 .hidden {
  display: none;
