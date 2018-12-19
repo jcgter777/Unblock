@@ -16,6 +16,15 @@ body {
   font-size: medium;
 }
 
+#secret {
+  border: 1px white;
+
+}
+
+#secret:hover {
+  background-color: #ccc;
+}
+
 /* #classroom {
   height: 95%;
 } */
