@@ -1,6 +1,18 @@
-function unlock() {
+/* function unlock() {
     document.getElementById('main-div').classList = 'visible';
     document.getElementById('decoy-div').classList = 'hidden';
+} */
+
+function go() {
+    document.getElementById('main-div').classList = 'visible';
+    document.getElementById('logout-span').classList = 'visible';
+    document.getElementById('login-div').classList = 'hidden';
+}
+
+function logout() {
+    document.getElementById('main-div').classList = 'hidden';
+    document.getElementById('logout-span').classList = 'hidden';
+    document.getElementById('login-div').classList = 'visible';
 }
 
 function openSite(evt, siteName) {
