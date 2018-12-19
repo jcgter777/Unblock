@@ -25,6 +25,7 @@ body {
   color: black;
   padding: none;
   margin: 0px;
+  width: 2em;
 } 
 
 #secret {
