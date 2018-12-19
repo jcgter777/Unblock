@@ -15,8 +15,9 @@ body {
 }
 
 #secret:hover {
-  background-color: #ccc;
-  border: 1px #A9A9A9;
+  /*background-color: #ccc;
+  border: 1px #A9A9A9;*/
+  cursor: progress;
 }
 
 /* #classroom {
