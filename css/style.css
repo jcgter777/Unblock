@@ -16,7 +16,7 @@ body {
 
 #secret:hover {
   background-color: #ccc;
-  border: 1px #696969;
+  border: 1px #A9A9A9;
 }
 
 /* #classroom {
@@ -29,6 +29,7 @@ body {
   height: 40px;
   margin: 0px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .hidden {
@@ -41,7 +42,7 @@ body {
 
 .site {
  width: 95vmax;
- height: 90vmin;
+ height: 85vmin;
 }
 
 .tab {
