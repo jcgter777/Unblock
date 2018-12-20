@@ -1,10 +1,10 @@
 function unlock() {
     document.getElementById('main-div').classList = 'visible';
     document.getElementById('decoy-div').classList = 'hidden';
+    document.getElementById("blank").click();
 }
 
 function openSite(evt, siteName) {
-  // Declare all variables
   var i, tabcontent, tablinks;
 
   // Get all elements with class="tabcontent" and hide them
@@ -24,10 +24,10 @@ function openSite(evt, siteName) {
   evt.currentTarget.className += " active";
 }
 
-function onSignIn(googleUser) {
+/* function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
+}*/
