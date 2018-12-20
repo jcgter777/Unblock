@@ -1,3 +1,10 @@
+function unlockOne() {
+    document.getElementById('main-div').classList = 'hidden';
+    document.getElementById('decoy-div').classList = 'visible';
+    document.getElementById("login-div").classList = 'hidden';
+}
+
+
 function unlock() {
     document.getElementById('main-div').classList = 'visible';
     document.getElementById('decoy-div').classList = 'hidden';
@@ -8,6 +15,13 @@ function lock() {
     document.getElementById('main-div').classList = 'hidden';
     document.getElementById('decoy-div').classList = 'visible';
     document.getElementById("blank").click();
+}
+
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
 }
 
 function openSite(evt, siteName) {
@@ -38,6 +52,5 @@ function onSignIn(googleUser) {
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
         
-        document.getElementById('decoy-div').classList = 'visible';
-        document.getElementById('main-div').classList = 'hidden';
+        unlockOne();
       }
