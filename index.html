@@ -30,7 +30,180 @@
     <div id="decoy-div">
       <h1 class="title">School W<var id="let" style="font-style: normal;" onclick="unlock()">e</var>b Designers Project</h1>
       
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod mi vitae orci hendrerit, a vulputate lacus dignissim. Vivamus non aliquet quam. Mauris non eros ipsum. Nunc lacus lorem, lobortis vitae velit non, facilisis condimentum nisi. Donec ac lacinia neque. Aliquam a ultricies sem, id mollis lacus. Mauris sed eros sed nisi molestie sollicitudin a in enim. Sed dapibus, odio at tempor pellentesque, mi lacus varius metus, et pretium enim purus ac quam. Duis fermentum urna vitae porta euismod. Donec feugiat tempor semper. Sed eu odio pulvinar, accumsan tellus ut, congue quam. Morbi eget dapibus velit. Nunc sollicitudin finibus nunc. Curabitur vulputate quam quis ante tincidunt faucibus. Pellentesque ultricies est orci, et dapibus risus tempor ac. Suspendisse sed lacus quis massa elementum tempor at non libero. Ut finibus viverra urna a bibendum. Curabitur feugiat nibh eget tellus molestie, eget ornare neque finibus. Sed at porttitor erat, sit amet tincidunt erat. In hendrerit risus non leo lobortis, sed luctus augue accumsan. Duis fringilla suscipit magna, a placerat nisl iaculis nec. Nunc fermentum sagittis efficitur. Vivamus iaculis, arcu ut dapibus vulputate, lacus lacus placerat enim, non pretium libero nulla non mi. In porttitor, libero ut finibus posuere, mauris velit imperdiet elit, ac vehicula arcu dolor et diam. Ut sit amet feugiat dolor. Fusce at porttitor urna. Donec tempus nibh non nunc laoreet, sed accumsan sem rutrum. Quisque a maximus tortor. In vitae metus quis elit maximus vehicula. Cras quis odio quis augue lacinia placerat sed in lacus. Cras dui quam, viverra et pharetra eget, venenatis ac tellus. Proin vel erat dapibus risus posuere consectetur. Nunc semper, felis ac volutpat feugiat, massa arcu convallis est, non malesuada libero mi sed augue. Fusce tempor leo quis elit aliquet, id auctor mauris euismod. Phasellus fermentum molestie velit, non luctus tellus vehicula eget. Ut dictum eros quis quam convallis viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla blandit dolor non orci faucibus, sagittis mollis neque maximus. Praesent dignissim interdum quam. Ut fringilla laoreet fringilla. Donec ac turpis justo. Praesent sollicitudin convallis fermentum. Phasellus imperdiet imperdiet urna, at finibus lacus lobortis ut. Morbi vel elit erat. Curabitur elementum in libero vel elementum. Vestibulum dapibus hendrerit magna non consectetur. Praesent nec risus et dolor elementum tristique. Maecenas vehicula nunc ut molestie varius. Cras non laoreet sem. Curabitur vitae efficitur urna, sit amet tempus quam. Curabitur sollicitudin tellus nec tristique congue. Cras eleifend aliquet leo et volutpat. Donec non lectus ut tellus ullamcorper rutrum a eu nibh. In nec lobortis nunc, ac dignissim justo. Aenean viverra, ligula ut lacinia sagittis, ex elit tincidunt purus, vel consectetur lorem nulla eu orci. Quisque interdum odio at libero bibendum, vel facilisis ipsum ullamcorper. Nulla ac turpis tempor, volutpat urna eget, commodo metus. Integer ut ex justo. Cras in sollicitudin metus. Integer volutpat iaculis erat vel pellentesque. Cras ornare neque tellus, sit amet commodo ipsum hendrerit sed.</p>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
       
       <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
     </div>
