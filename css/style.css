@@ -20,12 +20,7 @@ body {
 }
 
 #let {
-  border: none;
-  background-color: white;
-  color: black;
-  padding: none;
-  margin: 0px;
-  width: 2em;
+  font-style: normal;
 } 
 
 #secret {
