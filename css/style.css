@@ -23,20 +23,6 @@ body {
   font-style: normal;
 } 
 
-#secret {
-  border: 1px white;
-  border-radius: 50px;
-  height: 5px;
-  width: 5px;
-
-}
-
-#secret:hover {
-  /*background-color: #ccc;
-  border: 1px #A9A9A9;*/
-  cursor: crosshair;
-}
-
 .title {
   font-size: large;
   font-weight: 200;
