@@ -28,6 +28,10 @@ body {
   width: 2em;
 } 
 
+#signin {
+  align: center;
+}
+
 .title {
   font-size: large;
   font-weight: 200;
