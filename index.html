@@ -49,6 +49,8 @@
           
           <button class="tablinks" onclick="openSite(event, 'paper')">Paper.io</button>
           
+          <button class="tablinks" onclick="openSite(event, 'hole')">Hole.io</button>
+          
           <button class="tablinks" onclick="openSite(event, 'build')">Buildroyale.io</button>
           
           <button class="tablinks" onclick="openSite(event, 'worm')">Wormate.io</button>
@@ -65,6 +67,11 @@
 
       <div id="paper" class="tabcontent">
         <iframe src="https://www.paper-io.com/" class="site" scrolling="no"></iframe>
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      </div>
+      
+      <div id="hole" class="tabcontent">
+        <iframe src="https://hole-io.com/" class="site" scrolling="no"></iframe>
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
       </div>
 
