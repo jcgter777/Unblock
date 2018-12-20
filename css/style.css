@@ -46,8 +46,8 @@ body {
 }
 
 .site {
- width: 100%;
- height: 90vmin;
+ width: -webkit-fill-available;
+ height: -webkit-fill-available;
 }
 
 .tab {
