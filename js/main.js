@@ -4,22 +4,23 @@ function unlock() {
     document.getElementById("blank").click();
 }
 
+function lock() {
+    document.getElementById('main-div').classList = 'hidden';
+    document.getElementById('decoy-div').classList = 'visible';
+    document.getElementById("blank").click();
+}
+
 function openSite(evt, siteName) {
   var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-
-  // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(siteName).style.display = "block";
   evt.currentTarget.className += " active";
 }
@@ -36,4 +37,7 @@ function onSignIn(googleUser) {
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
+        
+        document.getElementById('decoy-div').classList = 'visible';
+        document.getElementById('main-div').classList = 'hidden';
       }
