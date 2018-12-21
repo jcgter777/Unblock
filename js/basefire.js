@@ -9,7 +9,7 @@ var config = {
             firebase.initializeApp(config);
 
 let auth = firebase.auth();
-auth.onStateChanged(user => {
+auth.onAuthStateChanged(user => {
     if (user) {
         signedIn();
     }
