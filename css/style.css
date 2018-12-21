@@ -33,7 +33,9 @@ body {
 }
 
 #signedOutNotif {
-    display: none;
+  display: none;
+  font-size: 200%;
+  font-weight: 600;
 }
 
 .title {
