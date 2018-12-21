@@ -19,11 +19,10 @@ auth.onAuthStateChanged(user => {
 });
 
 function signedIn() {
-  document.getElementById('all-div').classList = 'hidden';
+  document.getElementById('main-div').classList = 'hidden';
   document.getElementById('decoy-div').classList = 'visible';
   document.getElementById("login-div").classList = 'hidden';
   document.getElementById('signedOutNotif').style.display = "none";
-  unlockOne();
 }
 
 function signedOut() {
