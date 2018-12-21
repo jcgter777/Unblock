@@ -47,6 +47,18 @@ body {
   text-align: center;
 }
 
+.btn {
+    color: whitesmoke;
+    box-sizing: border-box;
+    border-radius: 2em;
+    border: 1px solid whitesmoke;
+    padding: 1em;
+    margin: 1em;
+    cursor: pointer;
+    font-size: 11pt;
+    text-transform: uppercase;
+}
+
 .hidden {
  display: none;
 }
