@@ -7,9 +7,6 @@ var config = {
                 messagingSenderId: "616494762242"
             };
             firebase.initializeApp(config);
-            
-var provider = new firebase.auth.GoogleAuthProvider();
-firebase.auth().signInWithRedirect(provider);
 
 let auth = firebase.auth();
 auth.onStateChanged(user => {
