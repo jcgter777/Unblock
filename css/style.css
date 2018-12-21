@@ -51,7 +51,7 @@ body {
     color: whitesmoke;
     box-sizing: border-box;
     border-radius: 2em;
-    border: 1px solid whitesmoke;
+    border: 1px solid black;
     padding: 1em;
     margin: 1em;
     cursor: pointer;
