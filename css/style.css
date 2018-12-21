@@ -34,8 +34,6 @@ body {
 
 #signedOutNotif {
   display: none;
-  font-size: 200%;
-  font-weight: 600;
 }
 
 .title {
@@ -57,6 +55,7 @@ body {
     cursor: pointer;
     font-size: 11pt;
     text-transform: uppercase;
+    font-variant: small-caps;
 }
 
 .hidden {
