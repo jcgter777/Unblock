@@ -32,6 +32,10 @@ body {
   align: center;
 }
 
+#signedOutNotif {
+    display: none;
+}
+
 .title {
   font-size: large;
   font-weight: 200;
