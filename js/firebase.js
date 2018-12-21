@@ -15,10 +15,21 @@ let auth = firebase.auth();
 auth.onStateChanged(user => {
     if (user) {
         signedIn();
-    document.yada class=hidden
     }
     else {
         signedOut();
-    document.yada class=hidden
     }
 });
+
+function signedIn() {
+  document.getElementById('all-div').classList = 'hidden';
+  document.getElementById('decoy-div').classList = 'visible';
+  document.getElementById("login-div").classList = 'hidden';
+  document.getElementById('signedOutNotif').style.display = "none";
+}
+
+function signedOut() {
+  alert("Your request did not go through. Please try again.");
+  document.getElementById('signedOutNotif').style.display = "block";
+}
+  
