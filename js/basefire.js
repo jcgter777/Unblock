@@ -22,11 +22,11 @@ function signedIn() {
   document.getElementById('main-div').classList = 'hidden';
   document.getElementById('decoy-div').classList = 'visible';
   document.getElementById("login-div").classList = 'hidden';
-  document.getElementById('signedOutNotif').style.display = "none";
+  /*document.getElementById('signedOutNotif').style.display = "none";*/
 }
 
 function signedOut() {
-  alert("Your request did not go through. Please try again.");
-  document.getElementById('signedOutNotif').style.display = "block";
+  alert("Sign in with Google");
+  /*document.getElementById('signedOutNotif').style.display = "block";*/
 }
   
