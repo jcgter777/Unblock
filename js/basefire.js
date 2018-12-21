@@ -23,6 +23,7 @@ function signedIn() {
   document.getElementById('decoy-div').classList = 'visible';
   document.getElementById("login-div").classList = 'hidden';
   document.getElementById('signedOutNotif').style.display = "none";
+  unlockOne();
 }
 
 function signedOut() {
